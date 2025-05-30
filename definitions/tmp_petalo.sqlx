@@ -1,8 +1,13 @@
 config {
-    type:"table",
+    type: "table",
     schema: "master_iris_sergio",
-    name:"tmp_iris_paralelo",
-    description:"tabla con inf de los pétalos",
+    name: "tmp_iris_petalo",
+    description: "tabla con inf de los pétalos",
 }
 
-SELECT * FROM `dt-data-analytics.cruda_iris_sergio.raw_petalo`
+SELECT
+  *
+FROM
+  `dt-data-analytics.cruda_iris_sergio.raw_petalo`
+WHERE
+  CAST(PetalLengthCm AS NUMERIC) > ${constants.largo_minimo_petalo}

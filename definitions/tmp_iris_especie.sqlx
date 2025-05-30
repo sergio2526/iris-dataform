@@ -1,0 +1,7 @@
+config {
+    type:"table",
+    schema: "master_iris_sergio",
+    name:"tmp_iris_especie",
+    description:"tabla con inf de los especie",
+}
+SELECT * FROM `dt-data-analytics.cruda_iris_sergio.raw_especie`

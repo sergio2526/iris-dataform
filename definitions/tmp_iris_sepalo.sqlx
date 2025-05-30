@@ -4,4 +4,4 @@ config {
     name:"tmp_iris_sepalo",
     description:"tabla con inf de los sepalo",
 }
-SELECT * FROM `dt-data-analytics.cruda_iris_sergio.raw_petalo`
+SELECT * FROM `dt-data-analytics.cruda_iris_sergio.raw_sepalo`

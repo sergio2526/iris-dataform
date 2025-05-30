@@ -1,0 +1,8 @@
+config {
+    type:"table",
+    schema: "master_iris_sergio",
+    name:"tmp_iris_paralelo",
+    description:"tabla con inf de los pétalos",
+}
+
+SELECT * FROM `dt-data-analytics.cruda_iris_sergio.raw_petalo`
